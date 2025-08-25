@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名前どうしよ鯖HP</title>
+    <script defer src="/component.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="slide.js"></script>
+    <style type="text/tailwindcss">
+        @theme{
+            --color-deep:#202020;
+            --color-selected:#d7a3dc;
+            --color-discord:#7289da;
+        }</style>
+</head>
+
+<body class="bg-blue-50 text-gray-800 font-sans leading-relaxed">
+    <component-container path="/component/header.html"></component-container>
+    <section id="gallery" class="mx-auto mb-12 mt-0">
+        <div class="relative w-full h-dvh overflow-hidden shadow-lg">
+            <div id="slideshow" class="absolute inset-0 w-full h-full">
+                <img src="/images/LRT.png"
+                    class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000"
+                    style="z-index:2;">
+                <img src="/images/contamination.png"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+                    style="z-index:1;">
+                <img src="/images/LRT.png"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+                    style="z-index:0;">
+            </div>
+            <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                <span class="w-3 h-3 rounded-full bg-selected opacity-100 transition-all duration-300 cursor-pointer"
+                    id="dot0" onclick="changeImage(0)"></span>
+                <span class="w-3 h-3 rounded-full bg-white opacity-80 transition-all duration-300 cursor-pointer"
+                    id="dot1" onclick="changeImage(1)"></span>
+                <span class="w-3 h-3 rounded-full bg-white opacity-80 transition-all duration-300 cursor-pointer"
+                    id="dot2" onclick="changeImage(2)"></span>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="container mx-auto px-4 pb-16">
+        <h2 class="text-4xl font-bold text-center mb-12">サーバーの特徴</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+                class="group relative bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 overflow-hidden">
+                <img src="/images/LRT.png" alt="自由な建築"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-30">
+                <div class="relative">
+                    <h3 class="text-2xl font-bold mb-4">自由な建築</h3>
+                    <p class="text-gray-700">広大な鉄道、道路網が存在し、自由に建築できます。</p>
+                </div>
+            </div>
+            <div
+                class="group relative bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 overflow-hidden">
+                <img src="/images/shops.png" alt="経済システム"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-30">
+                <div class="relative">
+                    <h3 class="text-2xl font-bold mb-4">経済システム</h3>
+                    <p class="text-gray-700">プレイヤー間の取引やショップを通じて、リアルな経済を体験できます。</p>
+                </div>
+            </div>
+            <div
+                class="group relative bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 overflow-hidden">
+                <img src="/images/court.png" alt="裁判システム"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-30">
+                <div class="relative">
+                    <h3 class="text-2xl font-bold mb-4">裁判システム</h3>
+                    <p class="text-gray-700">プレイヤー間の争いごとを解決するための公正な裁判システムを提供します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="container mx-auto px-4 py-16 bg-white rounded-lg shadow-lg my-12">
+        <h2 class="text-4xl font-bold text-center mb-12">サーバーへの参加方法</h2>
+        <div class="max-w-5xl mx-auto">
+            <ol class="list-decimal list-inside space-y-8 text-lg">
+                <li class="p-6 bg-blue-50 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-2">Minecraftを準備</h3>
+                    <p>Minecraft Java Editionをご用意ください。</p>
+                </li>
+                <li class="p-6 bg-blue-50 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-2">Discordサーバーに参加する</h3>
+                    <p>Valine3G氏の<a href="#join_discord" class="text-blue-500">Discordコミュニティ</a>に参加します。</p>
+                    ModPackやサーバーアドレスは名前どうしよ鯖のチャンネルのピン留めからご確認ください。
+
+                </li>
+                <li class="p-6 bg-blue-50 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-2">ルールを確認して参加！</h3>
+                    <p>サーバーに参加する前に、Discordサーバーでルールを必ずご確認ください。</p>
+                    <p>裁判というエンタメの素材にされる可能性があります。</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="community" class="container mx-auto px-4 pb-16">
+        <h2 class="text-4xl font-bold text-center mb-12">コミュニティに参加しよう</h2>
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6" id="join_discord">
+                    <h3 class="text-2xl font-bold mb-4">Discordサーバー</h3>
+                    <p class="text-gray-700 mb-6">サーバーの参加のためにはDiscordサーバーに参加することが必要です。<br>
+                        その他にも様々なサーバーが開催されています。</p>
+                    <a href="#"
+                        class="inline-block bg-discord text-white px-8 py-3 rounded-lg font-bold transition hover:bg-opacity-80">Discordに参加する</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-deep text-white text-center py-6 mt-12">
+        <div class="container mx-auto">
+            <p>&copy; 2024 名前どうしよ鯖. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
