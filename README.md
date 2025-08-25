@@ -9,6 +9,7 @@ vitepressで作成しています。
 ```shell
 git clone https://github.com/Valine3gDev/dousiyo-site.git
 cd dousiyo-site
+npm install
 ```
 
 
