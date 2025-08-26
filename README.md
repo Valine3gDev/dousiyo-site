@@ -11,6 +11,10 @@ git clone https://github.com/Valine3gDev/dousiyo-site.git
 cd dousiyo-site
 npm i
 ```
+### 開発サーバーの起動
+```shell
+npm run docs:dev
+```
 
 現在認可以上の鉄道会社の情報のみ追加できます。
 ### 駅情報の追加
