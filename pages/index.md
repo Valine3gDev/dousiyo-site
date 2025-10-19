@@ -25,7 +25,7 @@ features:
     details: 10を越える路線があり、それぞれに個性があります。
   - icon: 🏦
     title: 発展した経済
-    details: 券売機はもちろんコンビニやネットショップもあり、為替も実装予定。
+    details: 券売機はもちろんコンビニやネットショップもあり、為替も実装済。
   - icon: 🔫
     title: 銃と車
     details: 鉄道だけでなく、道路網も発展しています。銃もあり、スピード感ある銃撃戦が楽しめます。
@@ -36,12 +36,17 @@ features:
 
 <SokuhoSlider />
 
-## 2025年8月31日
+## 2025年10月19日
+- [放物連絡線](/company/houbutuHG/houbutu/line/houbuturenrakusen.md), [空港誘導線](/company/houbutuHG/houbutu/line/kukoyudosen.md), [丈北送信線](/company/houbutuHG/houbutu/line/zyouhokusousinsen.md)  
+放物連絡線は前から運休してました。今日から空港誘導線も運休します。迷鉄をご利用ください。  
+運行再開は1ヶ月後くらいを予定しています。
+
+<!-- ## 2025年8月31日
 - [迷鉄](/company/meitetsu)  
 迷鉄全車両再構築計画により本日より**迷鉄全区間を運休**します  
-ご迷惑をおかけしますがご理解の方よろしくお願いします
+ご迷惑をおかけしますがご理解の方よろしくお願いします -->
 
 ## 2025年8月25日
 - [金欠鉄道取鳥線](/company/kinketsuHG/kinketsu/line/tottorisen.md)  
-金欠鉄道取鳥線は1週間~1ヶ月間ほど**試運転取り止め**します  
+金欠鉄道取鳥線は1週間~1ヶ月間ほど**運休**します  
 金木,鶴牛湾へは豊急取鳥LRTをご利用下さい
